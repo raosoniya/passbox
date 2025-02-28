@@ -25,10 +25,10 @@ $q = "INSERT INTO add_password (username,sitename,password,date,time,user_id) VA
 
 if(mysqli_query($con,$q)){
     echo"<h1>Password Added Sucessfully.</h1>";
-    header("refresh:3;url=./../home.php");
+    header("refresh:3;url=./../index.php");
 }else{
     echo"<h1>Something went wrong.<br>Please try again later.</h1>";
-    header("refresh:3;url=./../home.php");
+    header("refresh:3;url=./../index.php");
 }
 
 ?>

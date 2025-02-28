@@ -1,4 +1,10 @@
 <?php
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 if(!isset($_SESSION["useremail"])){
     header("location:./login.php");
@@ -55,6 +61,7 @@ $num = mysqli_num_rows($sql);
                     <h4 class="show-username">{$row['username']}</h4>
                     <h4 class="show-sitename">{$row['sitename']}</h4>
                     <h4 class="show-pass">{$row['password']}</h4>
+                    <button class="copy-btn" onclick="copyPassword(this)">📋</button>
                 </div>
 abc;
         }
@@ -68,5 +75,6 @@ abc;
     <a href="logout.php" class="alink">
         <button class="btn btn-danger btn1">LOG OUT<button>
     </a>
+    <script src="./js/copy.js"></script>
 </body>
 </html>

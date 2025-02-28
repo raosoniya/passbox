@@ -19,7 +19,7 @@ if (mysqli_num_rows($sql) > 0) {
     if ($password == $row["password"]) {
         $_SESSION["useremail"] = $useremail;
         $_SESSION["user_id"] = $row["id"]; 
-        header("location:./../home.php");
+        header("location:./../index.php");
         exit;
     } 
     else {
@@ -43,7 +43,7 @@ if (mysqli_num_rows($sql) > 0) {
 
 //             session_start();
 //             $_SESSION["useremail"] = $useremail;
-//             header("location:./../home.php");
+//             header("location:./../index.php");
 //             exit;
 //         }
 //     }

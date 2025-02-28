@@ -70,11 +70,10 @@ hr{
     height: auto;
     /* margin: 0 1rem 1rem 1.5rem; */
     float: left;
-    
 }
 .show-pass {
-    display: inline-flex; /* Keeps the password and button together */
-    align-items: center; /* Aligns them vertically */
+    display: inline-flex; 
+    align-items: center; 
     font-size: 1rem;
     color: black;
     margin: 0;
@@ -84,7 +83,7 @@ hr{
     background: none; /* Remove button background */
     border: none; /* Completely remove button border */
     cursor: pointer;
-    font-size: 0.9rem; /* Adjust icon size */
+    font-size: 0.9rem;
     padding: 3px;
     margin-left: 2px; 
 }
@@ -125,17 +124,43 @@ hr{
 .cb{
     clear: both;
 } 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+    .save-pass{
+        width: 93%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .save-pass{
+        width: 100%;
+        margin-top: -0.3rem;
+    }
     .all-saved-pass {
-         width: 93%; 
+         /* border: 1px solid black; */
+         width: 100%; 
          margin: 0.5rem auto;
-         padding: 5px;
+         padding: 8px;
          float: none; 
          display: block; 
      }
+     .show-username,.show-sitename{
+         /* border: 1px solid black; */
+        font-size: 1.2rem;
+     }
+     .show-sitename, .show-pass{
+        /* border: 1px solid black; */
+        font-size: 0.9rem;
+        font-weight: 550;
+        padding: 5px;
+    } 
+     .h5{
+        /* border: 1px solid black; */
+       font-size: 1rem;
+    }
      .copy-btn {
+        /* border: 1px solid black; */
          margin-left: 0;
-         margin-top: 5px; 
+         /* margin-top: 5px;  */
+         padding: 0;
      }
  } 
  @media screen and (max-width: 480px) { 
@@ -144,5 +169,26 @@ hr{
     }
     .copy-message {
         font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px){
+    body{
+        /* background-color: rebeccapurple; */
+        padding: 8px;
+    }
+    .add-section{
+        /* border: 1px solid black; */
+        width: 30vh;
+        padding: 10px;
+    }
+    .h4{
+        font-size: 1.6rem;
+    }
+    .h1{
+        font-size: 1.5rem;
+    }
+    .h5{
+        font-size: 0.8rem;
+        font-weight: 500;
     }
 }
